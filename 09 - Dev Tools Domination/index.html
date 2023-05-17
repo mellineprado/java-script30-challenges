@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Console Tricks!</title>
-  <link rel="icon" href="https://fav.farm/✅" />
 </head>
 <body>
 
@@ -19,30 +18,32 @@
     }
 
     // Regular
-    console.log('hello');
+    console.log('hello!');
 
     // Interpolated
-    console.log('Hello I am a %s string!', '💩');
+    const pops = '💩';
+    console.log('hello i am a %s string!', '💩');
+    // ES6
+    console.log(`hello i am a ${pops}`);
 
     // Styled
-    // console.log('%c I am some great text', 'font-size:50px; background:red; text-shadow: 10px 10px 0 blue')
+    console.log('%c i am some great text', 'font-size:30px; color:blue');
 
     // warning!
-    console.warn('OH NOOO');
+    console.warn('OOOOOH NOOO!');
 
     // Error :|
-    console.error('Shit!');
+    console.error('oooh shit!');
 
     // Info
-    console.info('Crocodiles eat 3-4 people per year');
+    console.info('crocodiles eat 3-4 people per year');
 
     // Testing
     const p = document.querySelector('p');
-
     console.assert(p.classList.contains('ouch'), 'That is wrong!');
 
     // clearing
-    console.clear();
+    // console.clear();
 
     // Viewing DOM Elements
     console.log(p);
@@ -52,7 +53,7 @@
 
     // Grouping together
     dogs.forEach(dog => {
-      console.groupCollapsed(`${dog.name}`);
+      console.group(`${dog.name}`);
       console.log(`This is ${dog.name}`);
       console.log(`${dog.name} is ${dog.age} years old`);
       console.log(`${dog.name} is ${dog.age * 7} dog years old`);
@@ -60,19 +61,13 @@
     });
 
     // counting
-
-    console.count('Wes');
-    console.count('Wes');
-    console.count('Steve');
-    console.count('Steve');
-    console.count('Wes');
-    console.count('Steve');
-    console.count('Wes');
-    console.count('Steve');
-    console.count('Steve');
-    console.count('Steve');
-    console.count('Steve');
-    console.count('Steve');
+    console.count('millene');
+    console.count('millene');
+    console.count('millene');
+    console.count('luna');
+    console.count('millene');
+    console.count('luna');
+    console.count('luna');
 
     // timing
     console.time('fetching data');
